@@ -1,3 +1,4 @@
+import 'package:car_rental_app/firebase.dart';
 import 'package:car_rental_app/model/user_model.dart';
 import 'package:car_rental_app/screen/home_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -255,6 +256,38 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       ),
     );
 
+    //Login via Google
+    final loginViaGoogle = IconButton(
+        onPressed: () {
+          signInWithGoogle()
+              .then((uid) => {
+                    Fluttertoast.showToast(msg: "Welcome Back"),
+                    Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) => HomeScreen()))
+                  })
+              .catchError((e) {
+            Fluttertoast.showToast(msg: e!.message);
+          });
+        },
+        icon: Image.asset("images/icons/googleicon.png"));
+
+    //Login via Facebook
+    final loginViaFacebook = IconButton(
+      onPressed: () {
+        signInWithFacebook()
+            .then((uid) => {
+                  Fluttertoast.showToast(msg: "Welcome Back"),
+                  Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => HomeScreen()))
+                })
+            .catchError((e) {
+          Fluttertoast.showToast(msg: e!.message);
+        });
+      },
+      icon: Image.asset("images/icons/facebookicon.png"),
+      iconSize: 35,
+    );
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -326,7 +359,15 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           ),
                         )
                       ],
-                    )
+                    ),
+                    SizedBox(height: 25),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        loginViaGoogle,
+                        loginViaFacebook,
+                      ],
+                    ),
                   ],
                 ),
               ),
