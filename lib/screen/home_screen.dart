@@ -39,12 +39,13 @@ class _HomeScreenState extends State<HomeScreen> {
           Text(
             "Rent a Car",
             style: TextStyle(
-              color: Colors.black,
+              color: Color.fromARGB(255, 25, 51, 97),
               fontFamily: 'Poppins',
               fontSize: 15,
               height: 0,
             ),
           ),
+          SizedBox(height: 15),
         ],
       ),
       actions: [
