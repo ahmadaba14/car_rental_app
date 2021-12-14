@@ -261,7 +261,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         onPressed: () {
           signInWithGoogle()
               .then((uid) => {
-                    Fluttertoast.showToast(msg: "Welcome Back"),
+                    Fluttertoast.showToast(msg: "Welcome"),
                     Navigator.of(context).pushReplacement(
                         MaterialPageRoute(builder: (context) => HomeScreen()))
                   })
@@ -276,7 +276,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       onPressed: () {
         signInWithFacebook()
             .then((uid) => {
-                  Fluttertoast.showToast(msg: "Welcome Back"),
+                  Fluttertoast.showToast(msg: "Welcome"),
                   Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (context) => HomeScreen()))
                 })
