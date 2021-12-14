@@ -36,12 +36,14 @@ class _HomeScreenState extends State<HomeScreen> {
             child: IconButton(
                 onPressed: () {}, icon: Image.asset("images/HomepageIcon.png")),
           ),
+          SizedBox(height: 5),
           Text(
             "Rent a Car",
             style: TextStyle(
               color: Color.fromARGB(255, 25, 51, 97),
               fontFamily: 'Poppins',
               fontSize: 15,
+              fontWeight: FontWeight.w600,
               height: 0,
             ),
           ),
