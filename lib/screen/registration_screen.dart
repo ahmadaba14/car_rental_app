@@ -272,7 +272,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         icon: Image.asset("images/icons/googleicon.png"));
 
     //Login via Facebook
-    final loginViaFacebook = IconButton(
+    /*final loginViaFacebook = IconButton(
       onPressed: () {
         signInWithFacebook()
             .then((uid) => {
@@ -286,7 +286,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       },
       icon: Image.asset("images/icons/facebookicon.png"),
       iconSize: 35,
-    );
+    );*/
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -365,7 +365,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         loginViaGoogle,
-                        loginViaFacebook,
                       ],
                     ),
                   ],

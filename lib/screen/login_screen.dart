@@ -120,7 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
         icon: Image.asset("images/icons/googleicon.png"));
 
     //Login via Facebook
-    final loginViaFacebook = IconButton(
+    /*final loginViaFacebook = IconButton(
       onPressed: () {
         signInWithFacebook()
             .then((uid) => {
@@ -134,7 +134,7 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       icon: Image.asset("images/icons/facebookicon.png"),
       iconSize: 35,
-    );
+    );*/
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -194,7 +194,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         loginViaGoogle,
-                        loginViaFacebook,
                       ],
                     ),
                   ],
