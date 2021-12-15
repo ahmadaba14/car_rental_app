@@ -1,6 +1,5 @@
 import 'package:car_rental_app/screen/navBarItems/addCar.dart';
 import 'package:car_rental_app/screen/navBarItems/home.dart';
-import 'package:car_rental_app/screen/navBarItems/userAccount.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -75,7 +74,6 @@ class _HomeScreenState extends State<HomeScreen> {
   static const List<Widget> _widgetOptions = <Widget>[
     Home(),
     AddCarPage(),
-    UserAccount(),
   ];
 
   void _onItemTapped(int index) {
@@ -99,10 +97,6 @@ class _HomeScreenState extends State<HomeScreen> {
             size: 40,
           ),
           label: 'Add Car',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.account_circle),
-          label: 'Account',
         ),
       ],
       currentIndex: _selectedIndex,
