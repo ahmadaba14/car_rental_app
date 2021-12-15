@@ -1,4 +1,4 @@
-import 'package:car_rental_app/screen/home/home.dart';
+import 'package:car_rental_app/screen/navBarItems/home.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
