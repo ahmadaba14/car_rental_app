@@ -1,3 +1,4 @@
+import 'package:car_rental_app/screen/navBarItems/addCar.dart';
 import 'package:car_rental_app/screen/navBarItems/home.dart';
 import 'package:flutter/material.dart';
 
@@ -72,10 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     Home(),
-    Text(
-      'Index 1: Add Car',
-      style: optionStyle,
-    ),
+    AddCarPage(),
     Text(
       'Index 2: Account',
       style: optionStyle,
