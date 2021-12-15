@@ -1,5 +1,6 @@
 import 'package:car_rental_app/firebase.dart';
 import 'package:car_rental_app/screen/registration_screen.dart';
+import 'package:car_rental_app/widgets/custom_text.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -157,6 +158,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         fit: BoxFit.contain,
                       ),
                     ),
+                    CustomText(
+                      text: "Welcome",
+                      alignment: Alignment.topCenter,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    Text("Please Sign in to Continue"),
                     SizedBox(height: 45),
                     emailField,
                     SizedBox(height: 25),

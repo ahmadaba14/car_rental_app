@@ -1,6 +1,7 @@
 import 'package:car_rental_app/firebase.dart';
 import 'package:car_rental_app/model/user_model.dart';
 import 'package:car_rental_app/screen/home_screen.dart';
+import 'package:car_rental_app/widgets/custom_text.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -318,6 +319,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         "images/1x/RentACarIcon.png",
                         fit: BoxFit.contain,
                       ),
+                    ),
+                    CustomText(
+                      text: "Sign Up",
+                      alignment: Alignment.topCenter,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
                     ),
                     SizedBox(height: 45),
                     nameField,
