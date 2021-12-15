@@ -34,7 +34,12 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 50,
             width: 50,
             child: IconButton(
-                onPressed: () {}, icon: Image.asset("images/HomepageIcon.png")),
+                onPressed: () {
+                  setState(() {
+                    _selectedIndex = 0;
+                  });
+                },
+                icon: Image.asset("images/HomepageIcon.png")),
           ),
           SizedBox(height: 5),
           Text(
