@@ -44,6 +44,7 @@ dependencies:
   google_sign_in: ^5.2.1
   material_floating_search_bar: ^0.3.6
   new_gradient_app_bar: ^0.2.0
+  http: ^0.13.4
 
 dev_dependencies:
   flutter_lints: ^1.0.0
